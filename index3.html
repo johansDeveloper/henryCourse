@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="main3.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div>
+            <script>
+
+                function multiplicarArgumentos(x){
+                 
+                    var numeros = JSON.parse(JSON.stringify(arguments[0]));
+                                                        
+                    var producto = 1;
+
+                    for (i = 0; i < numeros.length; i++) {
+                        producto = numeros[i]*producto;
+                    }
+                    
+                    return producto;
+                }
+                
+                var conjunto = new Array("a", "c", "v", "i", "o");
+                var numeros = new Array(1, 2, 3, 8, 4, 100, 5 , 2, 3, 8, 4, 10, 2, 3, 8, 4, 100, 50, 5);
+                //var table = new Array(60);                            
+                //console.log(devolverPrimerElemento(conjunto));
+                //console.log(devolverUltimoElemento(conjunto));
+                //console.log(devolverLargoDelArray(conjunto));
+                //console.log(devolverLargoDelArray(conjunto));
+                //console.log(incrementarPorUno(numeros));
+                //console.log(agregarItemAlFinalDelArray(numeros, 9));
+                //console.log(agregarItemAlComienzoDelArray(numeros, 9));
+                //console.log(dePalabrasAFrase(conjunto));
+                //console.log(arrayContiene(numeros, 6));
+                //console.log(agregarNumeros(numeros));
+                //console.log(promedioResultadosTest(numeros));
+                //console.log(numeroMasGrande(numeros));
+                console.log(multiplicarArgumentos(numeros));
+                //console.log(cuentoElementos(numeros));
+            </script>
+        </div>
+    </body>
+</html>
